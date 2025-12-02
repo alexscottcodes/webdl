@@ -1,0 +1,12 @@
+build:
+  gpu: false
+  system_packages:
+    - "httrack"
+    - "zip"
+  python_version: "3.11"
+  python_requirements: requirements.txt
+
+predict: "predict.py:Predictor"
+
+# predict.py defines how predictions are run on your model
+predict: "predict.py:Predictor"
